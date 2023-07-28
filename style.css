@@ -1,24 +1,23 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
     overflow: hidden;
-}
+  }
 
-.grid-container {
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(100, 1fr);
-    grid-template-rows: repeat(100, 1fr);
-    height: 100vh;
+    grid-template-columns: repeat(100, 1cm);
+    grid-template-rows: repeat(100, 1cm);
     width: 100vw;
-}
+    height: 100vh;
+  }
 
-.grid-unit {
+  .grid-item {
+    width: 1cm;
+    height: 1cm;
     background-color: white;
-    border: 1px solid #ccc;
-}
+  }
 
-/* Change background color on hover */
-.grid-unit:hover {
+  .grid-item:hover {
     background-color: black;
-}
+  }
