@@ -6,18 +6,22 @@ body {
 
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(100, 1cm);
-    grid-template-rows: repeat(100, 1cm);
+    grid-template-columns: repeat(100, 0.5cm);
+    grid-template-rows: repeat(100, 0.5cm);
     width: 100vw;
     height: 100vh;
   }
 
   .grid-item {
-    width: 1cm;
-    height: 1cm;
+    width: 0.5cm;
+    height: 0.5cm;
     background-color: white;
   }
 
   .grid-item:hover {
     background-color: black;
-  }
+  
+  } 
+
+
+
