@@ -1,15 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .grid-container {
     display: grid;
     grid-template-columns: repeat(100, 0.5cm);
     grid-template-rows: repeat(100, 0.5cm);
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
+    border-color: black;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
   }
 
   .grid-item {
@@ -23,5 +29,15 @@ body {
   
   } 
 
+.erase-button{
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    padding: 5%;
+}
 
-
+#grid-wrapper{
+    height: 50vh;
+    width: 50vw;
+}

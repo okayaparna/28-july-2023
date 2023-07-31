@@ -1,30 +1,3 @@
-// const gridContainer = document.getElementById('gridContainer');
-
-// // Function to create a grid item (unit) with event listeners for hover effect
-// function createGridItem() {
-//   const gridItem = document.createElement('div');
-//   gridItem.className = 'grid-item';
-  
-//   // Add event listener for hover effect
-//   gridItem.addEventListener('mouseover', () => {
-//     gridItem.style.backgroundColor = 'black';
-
-//   });
-
-//   gridContainer.appendChild(gridItem);
-// }
-
-// // Function to generate the grid with 100x100 units
-// function generateGrid() {
-//   for (let i = 0; i < 100 * 100; i++) {
-//     createGridItem();
-//   }
-// }
-
-// generateGrid();
-
-
-
     const gridContainer = document.getElementById('gridContainer');
     let isDragging = false;
 
@@ -36,14 +9,15 @@
       gridContainer.appendChild(gridItem);
     }
 
-    // Function to generate the grid with 100x100 units
-    function generateGrid() {
-      for (let i = 0; i < 100 * 100; i++) {
-        createGridItem();
+     // Function to generate the grid with 100x100 units
+     function generateGrid() {
+        for (let i = 0; i < 100 * 100; i++) {
+          createGridItem();
+        }
       }
-    }
-
-    generateGrid();
+  
+      generateGrid();
+       
 
     // Event listeners for mouse/keyboard drag
     gridContainer.addEventListener('mousedown', () => {
@@ -76,3 +50,15 @@
       gridContainer.classList.remove('dragging');
     });
 
+
+
+// Event listener for the erase button
+const eraseButton = document.getElementById('erase-button-id');
+eraseButton.addEventListener('click', () => {
+  const gridItems = document.querySelectorAll('.grid-item');
+
+  // Loop through all grid items and change their background color to white
+  gridItems.forEach((item) => {
+    item.style.backgroundColor = 'white';
+  });
+});
